@@ -33,6 +33,11 @@ export default function New( { history }) {
         history.push('/dashboard');
     }
 
+    function handleCancel() {
+        history.push('/dashboard');
+    }
+
+
     return (
         <form onSubmit={handleSubmit}>
             <label
@@ -72,6 +77,8 @@ export default function New( { history }) {
 
 
             <button type="submit" className="btn">Cadastrar</button>
+
+            <button type="submit" className="btnCancel" onClick={handleCancel} >Cancelar</button>
         </form>
     )
 

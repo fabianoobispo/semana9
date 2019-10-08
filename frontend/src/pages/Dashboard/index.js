@@ -27,7 +27,9 @@ export default function Dashboard() {
                         <header style={{ backgroundImage: `url(${spot.thumbnail_url})` }} />
                         <strong>{spot.company}</strong>
                         <span>{spot.price ? `R$${spot.price}/dia` : 'Gratuito'}</span>
+                        <button className="btnCancel">Apagar</button>
                     </li>
+                    
                 ))}
             </ul>
 
